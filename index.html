@@ -4,13 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MKYtest</title>
-  <script src="https://tracking-flow-widget.qc.cxgenie.ai/script/widget.min.js"></script>
+  var script = document.createElement('script');
+  <script>
+  (function() {
   <script src="https://tracking-flow-widget.qc.cxgenie.ai/script/tracker.min.js"></script>
-  script.onload = function() {  
-  window.Tracker.init("867", "", { 'meta_key': 'meta_value' });
+  script.onload = function() {
+  window.Tracker.init(’867', "", { 'meta_key': 'meta_value' });
+  window.Tracker.track('event_name', { property: 'value' });
+  window.Tracker.updateProfile({ key: 'value' });
+  window.Tracker.setMetadata({ key: 'value' });
   };
   document.head.appendChild(script);
   })();
+  </script>
+  <script src="https://tracking-flow-widget.qc.cxgenie.ai/script/widget.min.js"></script>
   
   <style>
     body {
