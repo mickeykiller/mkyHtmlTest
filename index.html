@@ -56,9 +56,9 @@
  <script>
   (function() {
     var script = document.createElement('script');
-    script.src = 'https://cdn.genietracking.com/script/tracker.min.js';
+    script.src = 'http://localhost:3000/script/tracker.min.js';
     script.onload = function() {
-      window.Tracker.init(201, "", { key: 'value'});
+      window.Tracker.init(4, "", { key: 'value'});
     };
     document.head.appendChild(script);})();
 </script> 
