@@ -54,18 +54,20 @@
   </style>
 
  
+<script>
+  (function() {
+    var script = document.createElement('script');
+    script.src = 'http://localhost:3000/script/tracker.min.js';
+    script.onload = function() {
+      window.Tracker.init(4, "", {key: 'meta_value'});
+    };
+    document.head.appendChild(script);})();
+</script> 
+
   <script src="http://localhost:3000/script/widget.min.js"></script>
-  <script src="http://localhost:3000/script/tracker.min.js"></script>
-  <script>
-    (function () {
-      var script = document.createElement('script');
-      script.src="http://localhost:3000/script/tracker.min.js";
-      script.onload = function () {
-        window.Tracker.init(4, "", { 'meta_key': 'meta_value' });
-      };
-      document.head.appendChild(script);
-    })();
-  </script>
+<script 
+  src="https://custom1.genietracking.com/script/widget.min.js">
+</script>
   
 </head>
 <body>
