@@ -64,8 +64,8 @@
   });
 
   async function initScripts() {
-    await loadScript("http://localhost:3004/script/widget.min.js");
-    await loadScript("http://localhost:3004/script/tracker.min.js");
+    await loadScript("http://localhost:3003/script/widget.min.js");
+    await loadScript("http://localhost:3003/script/tracker.min.js");
 
     if (window.Tracker) {
       window.Tracker.init(4, "", { key: 'meta_value' });
